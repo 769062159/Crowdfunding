@@ -6,17 +6,47 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/init.less" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
 		<link rel="stylesheet/less" href="css/index.less">
 		<script src="js/pm.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/less.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="body-container">
-			<div class="navbar-container"></div>
-			<div class="banner-container"></div>
-			<div class="selectBtnBox"></div>
+			<div class="topBox">
+				<img src="images/bannerbg.png" alt="">
+				<div class="top-content">
+					<div class="navbar-container">
+						<div class="item">众筹作品</div>
+						<div class="item" style="text-align: right;">竞价交易</div>
+						<div class="item" style="text-align: right;">IP+</div>
+						<div class="item" style="width: 0.7rem;"><img src="images/search.png" alt=""></div>
+					</div>
+					<div class="banner-container">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="images/banner.png" alt=""></div>
+								<div class="swiper-slide"><img src="images/banner.png" alt=""></div>
+								<div class="swiper-slide"><img src="images/banner.png" alt=""></div>
+							</div>
+							<!-- 如果需要分页器 -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="selectBtnBox">
+						<div class="item"><img src="images/01.png" alt="">上传作品</div>
+						<div class="item"><img src="images/02.png" alt="">版权确权</div>
+						<div class="item"><img src="images/03.png" alt="">资产上链</div>
+						<div class="item"><img src="images/04.png" alt="">作品需求</div>
+					</div>
+				</div>
+				
+				
+			</div>
+
 			<div class="item-container">
 				<div class="item1"></div>
 				<div class="item2"></div>
@@ -24,4 +54,16 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		$(function(){
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay:3000,
+				loop: true,
+				speed:1000,
+				pagination: {
+					el: '.swiper-pagination',
+				}
+			})
+		})
+	</script>
 </html>

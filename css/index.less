@@ -1,6 +1,81 @@
 body{
-	.container-fluid{
-		background-color: black;
-		color: #fff;
+	.body-container{
+		.topBox{
+			width: 100%;
+			height: 6.7rem;
+			position: relative;
+			&>img{
+				width: 100%;
+				height: 4rem;
+			}
+			.top-content{
+				position: absolute;
+				width: 7rem;
+				top:0.4rem;
+				left: 50%;
+				margin-left: -3.5rem;
+			}
+			.selectBtnBox{
+				width: 100%;
+				height: 2rem;
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-around;
+				.item{
+					margin-top: 0.3rem;
+					width: 1.1rem;
+					height: 1.25rem;
+					color:#666666;
+					text-align:center;
+					img{
+						display: block;
+						margin: 0 auto;
+						width: 0.9rem;
+						height: 0.9rem;
+						border-radius: 50%;
+						margin-bottom: 0.1rem;
+					}
+				}
+			}
+			.navbar-container{
+				display:flex;
+				flex-wrap:nowrap;
+				justify-content:space-around;
+				height:0.6rem;
+				
+				.item{
+					width: 1.2rem;
+					// border: 1px solid red;
+					text-align: center;
+					line-height: 0.6rem;
+					color: #fff;
+					img{
+						display: block;
+						width: 0.4rem;
+						height: 0.4rem;
+						float: right;
+						margin-top: 0.1rem;
+					}
+				}
+			}
+			.banner-container{
+				width: 7rem;
+				height: 3.63rem;
+				margin: 0 auto;
+				.swiper-container{
+					width: 7rem;
+					height: 3.63rem;
+					.swiper-wrapper{
+						.swiper-slide{
+							img{
+								width: 7rem;
+								height: 3.63rem;
+							}
+						}
+					}
+				}
+			}
+		}
+		
 	}
 }
