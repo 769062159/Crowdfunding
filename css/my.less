@@ -1,0 +1,196 @@
+body{
+  width: 100%;
+  .body-container{
+    .header{
+      display: flex;
+      flex-wrap: nowrap;
+      position: relative;
+      &>img{
+        position: absolute;
+        display: block;
+        z-index: 1;
+        width: 100%;
+        height: 3.75rem;
+      }
+      .header-content{
+        position: absolute;
+        z-index: 2;
+        .setting{
+          display: block;
+          margin-top: 0.65rem;
+          margin-left: 6.85rem;
+          &>img{
+            width: 0.42rem;
+            height: 0.4rem;
+          }
+        }
+        .user{
+          position: absolute;
+          display: flex;
+          flex-wrap: nowrap;
+          &>img{
+            display: block;
+            margin-top: 0.2rem;
+            margin-left: 0.74rem;
+            width: 1.2rem;
+            height: 1.2rem;
+          }
+          .username{
+            height: 1.2rem;
+            font-size: 0.36rem;
+            color: #4c4c4c;
+            line-height: 1.2rem;
+            margin-top: 0.35rem;
+            margin-left: 0.35rem;
+            font-weight: bold;
+          }
+          .update{
+            font-weight: bold;
+            height: 1.2rem;
+            font-size: 0.24rem;
+            color: #4c4c4c;
+            line-height: 1.2rem;
+            margin-top: 0.35rem;
+            margin-left: 2.9rem;
+          }
+        }
+      }
+      .box{
+        width: 7.04rem;
+        height: 1.54rem;
+        background-color: #fff;
+        box-shadow: #f0f0f0 0 0.05rem 0.1rem 0;
+        //position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        margin-top: 2.9rem;
+
+        border-radius: 0.2rem;
+        .content{
+          display: flex;
+          flex-wrap: nowrap;
+          margin-left: 1rem;
+          margin-top: 0.6rem;
+          &>img{
+            width: 0.45rem;
+            height: 0.4rem;
+          }
+          .my{
+            font-size: 0.3rem;
+            color: #4c4c4c;
+            font-weight: bold;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            margin-left: 0.2rem;
+          }
+        }
+      }
+    }
+  }
+  .box1{
+    width: 7rem;
+    margin: 0 auto;
+    margin-top: 0.9rem;
+    .content{
+      display: flex;
+      flex-wrap: nowrap;
+      &>img{
+        display: block;
+        width: 0.40rem;
+        height: 0.35rem;
+      }
+      .word{
+        display: block;
+        height: 0.35rem;
+        line-height: 0.35rem;
+        font-size: 0.3rem;
+        font-weight: bold;
+        color: #4c4c4c;
+        margin-left: 0.5rem;
+      }
+      .arrow{
+        line-height: 0.4rem;
+        margin: 0.1rem 0 0.1rem 5.1rem;
+        width: 0.15rem;
+        height: 0.2rem;
+      }
+    }
+    .content1{
+        margin-top: 0.5rem;
+        margin-left: 0.34rem;
+        display: flex;
+        flex-wrap: nowrap;
+      position: relative;
+      /*span{
+        background-image: url("../images/right.png");
+        display: block;
+        width: 0.40rem;
+        height: 0.35rem;
+        border: 1px solid red;
+      }*/
+      .arrow{
+        position: absolute;
+        top: 0;
+        right: 0.3rem;
+        display: block;
+      }
+        .icon{
+          display: block;
+          width: 0.40rem;
+          height: 0.35rem;
+        }
+      .arrow{}
+      .word{
+        white-space: nowrap;
+        display: block;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        font-size: 0.3rem;
+        font-weight: bold;
+        color: #4c4c4c;
+        margin-left: 0.5rem;
+      }
+      .arrow{
+        line-height: 0.4rem;
+        margin: 0.1rem 0 0.1rem 5.1rem;
+        width: 0.15rem;
+        height: 0.2rem;
+      }
+      .arrow1{
+        line-height: 0.4rem;
+        margin: 0.1rem 0 0.1rem 4.5rem;
+        width: 0.15rem;
+        height: 0.2rem;
+      }
+    }
+  }
+  .body-container .footer{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    box-shadow: #f0f0f0 0 -0.05rem 0.1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .box {
+      margin-top: 0.2rem;
+      flex: 1;
+      .shouye{
+        display: block;
+        margin: 0 auto;
+        width: 0.4rem;
+        height: 0.45rem;
+      }
+      .tip{
+        text-align: center;
+        margin-top: 0.15rem;
+        font-size: 0.22rem;
+        font-weight: bold;
+        color: #666666;
+      }
+    }
+  }
+}
